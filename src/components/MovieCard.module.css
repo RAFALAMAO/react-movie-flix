@@ -1,0 +1,27 @@
+.movieCard{
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Cuando pase el mouse */
+.movieCard:hover{
+    opacity: 0.5;
+}
+
+.movieImage{
+    border-radius: 30px;
+    background-color: azure;
+}
+
+@media (max-width: 560px){
+    .movieImage{
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+    }
+    .movieCard{
+        list-style: none;
+        font-size: 0.5rem;
+    }
+}
