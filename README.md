@@ -6,7 +6,7 @@ App made with ReactJs. It's just a simple consumption of an API to get and show 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-NOTE: IF YOU CLONE THIS REPO, YOU NEED TO ADD A NEW BEAER TOKEN TO CONSUME MOVIES API.
+**NOTE**: IF YOU CLONE THIS REPO, YOU NEED TO ADD A NEW BEAER TOKEN TO CONSUME MOVIES API.
 
 ## Available Scripts
 
