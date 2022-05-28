@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-movie-flix/static/css/main.353da89d.css",
-    "main.js": "/react-movie-flix/static/js/main.3ccb3c2b.js",
+    "main.js": "/react-movie-flix/static/js/main.aa4f29f6.js",
     "index.html": "/react-movie-flix/index.html",
     "main.353da89d.css.map": "/react-movie-flix/static/css/main.353da89d.css.map",
-    "main.3ccb3c2b.js.map": "/react-movie-flix/static/js/main.3ccb3c2b.js.map"
+    "main.aa4f29f6.js.map": "/react-movie-flix/static/js/main.aa4f29f6.js.map"
   },
   "entrypoints": [
     "static/css/main.353da89d.css",
-    "static/js/main.3ccb3c2b.js"
+    "static/js/main.aa4f29f6.js"
   ]
 }
