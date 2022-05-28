@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/react-movie-flix/static/css/main.9478dcaf.css",
-    "main.js": "/react-movie-flix/static/js/main.54f9c597.js",
+    "main.css": "/react-movie-flix/static/css/main.be0b64f4.css",
+    "main.js": "/react-movie-flix/static/js/main.46bf5a23.js",
     "static/media/movie-bot.png": "/react-movie-flix/static/media/movie-bot.0fc6fde112050035a2e8.png",
     "static/media/userAvatar.jpg": "/react-movie-flix/static/media/userAvatar.5e9023a907d8a20f6fae.jpg",
+    "static/media/film-strip-colored.png": "/react-movie-flix/static/media/film-strip-colored.b737a4986718e941b109.png",
     "index.html": "/react-movie-flix/index.html",
-    "main.9478dcaf.css.map": "/react-movie-flix/static/css/main.9478dcaf.css.map",
-    "main.54f9c597.js.map": "/react-movie-flix/static/js/main.54f9c597.js.map"
+    "main.be0b64f4.css.map": "/react-movie-flix/static/css/main.be0b64f4.css.map",
+    "main.46bf5a23.js.map": "/react-movie-flix/static/js/main.46bf5a23.js.map"
   },
   "entrypoints": [
-    "static/css/main.9478dcaf.css",
-    "static/js/main.54f9c597.js"
+    "static/css/main.be0b64f4.css",
+    "static/js/main.46bf5a23.js"
   ]
 }
