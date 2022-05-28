@@ -1,4 +1,4 @@
-# Movie Flix
+# [Movie Flix](https://rafalamao.github.io/react-movie-flix/)
 
 App made with ReactJs. It's just a simple consumption of an API to get and show movie information, also a virtual assitant that sends you movie information in real time.
 
