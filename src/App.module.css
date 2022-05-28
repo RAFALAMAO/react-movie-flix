@@ -1,11 +1,21 @@
 .title{
+    --shadowColor: #0b21b3;
     text-align: center;
-    font-size: 3rem;
-    text-shadow: 0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 30px #e60073,
-    0 0 40px #e60073,
-    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    font-size: 3.2rem;
+    text-shadow: 0 0 10px rgb(35, 30, 30),
+    0 0 0px rgb(25, 21, 21),
+    0 0 10px var(--shadowColor),
+    0 0 20px var(--shadowColor),
+    0 0 30px var(--shadowColor), 0 0 40px var(--shadowColor), 0 0 50px var(--shadowColor);
+
+    text-decoration: none;
+    color: #b5f0ff;
+    font-family: 'Odibee Sans', cursive;
+
+    background-image: url(./imgs/film-strip-colored.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 a {

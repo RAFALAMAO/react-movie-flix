@@ -1,3 +1,14 @@
+:root {
+    --sendBarColor: #194f72;
+    --headerColor: #192972;
+    --boxShadowBarColor: #061865;
+    --typingDotColor: rgb(12, 185, 208);
+}
+
+.rcw-picker-icon {
+    display: none;
+}
+
 .rcw-message {
     margin: 10px;
     display: flex;
@@ -107,13 +118,13 @@
 }
 
 .rcw-conversation-container .rcw-header {
-    background-color: #35cce6;
+    background-color: var(--headerColor);
     border-radius: 10px 10px 0 0;
     color: #fff;
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 15px 0 25px
+    padding: 5px 0 25px
 }
 
 .rcw-conversation-container .rcw-title {
@@ -145,7 +156,7 @@
 }
 
 .rcw-full-screen .rcw-close-button {
-    background-color: #35cce6;
+    background-color: var(--headerColor);
     border: 0;
     display: block;
     position: absolute;
@@ -159,7 +170,7 @@
     height: 20px
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:700px) {
     .rcw-conversation-container .rcw-header {
         border-radius: 0;
         flex-shrink: 0;
@@ -171,7 +182,7 @@
     }
 
     .rcw-conversation-container .rcw-close-button {
-        background-color: #35cce6;
+        background-color: var(--headerColor);
         border: 0;
         display: block;
         position: absolute;
@@ -196,11 +207,16 @@
 }
 
 .loader-container {
-    background-color: #f4f7f9;
+    background-color: #00548c;
     border-radius: 10px;
     padding: 15px;
     max-width: 215px;
-    text-align: left
+    text-align: left;
+    color: red;
+}
+
+.loader-container span {
+    color: red;
 }
 
 .loader-dots {
@@ -208,7 +224,7 @@
     height: 4px;
     width: 4px;
     border-radius: 50%;
-    background: grey;
+    background: var(--typingDotColor);
     margin-right: 2px;
     -webkit-animation: bounce .5s ease infinite alternate;
     animation: bounce .5s ease infinite alternate
@@ -250,7 +266,8 @@
 }
 
 .rcw-messages-container {
-    background-color: #fff;
+    background-color: #121d33;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23343236' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     height: 50vh;
     max-height: 410px;
     overflow-y: scroll;
@@ -263,7 +280,7 @@
     max-height: none
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:700px) {
     .rcw-messages-container {
         height: 100%;
         max-height: none
@@ -272,7 +289,7 @@
 
 .rcw-sender {
     align-items: flex-end;
-    background-color: #f4f7f9;
+    background-color: var(--sendBarColor);
     border-radius: 0 0 10px 10px;
     display: flex;
     height: -webkit-max-content;
@@ -290,7 +307,7 @@
 }
 
 .rcw-new-message {
-    background-color: #fff;
+    background-color: rgb(179, 197, 255);
     border: 0;
     border-radius: 5px;
     padding: 10px 5px;
@@ -318,7 +335,8 @@
     user-select: text;
     white-space: pre-wrap;
     word-wrap: break-word;
-    color: green
+    color: rgb(9, 102, 148);
+    cursor: text;
 }
 
 .rcw-input.focus-visible,
@@ -333,13 +351,14 @@
 
 .rcw-picker-btn,
 .rcw-send {
-    background: #f4f7f9;
+    background: var(--sendBarColor);
     border: 0;
     cursor: pointer
 }
 
 .rcw-picker-btn .rcw-send-icon,
 .rcw-send .rcw-send-icon {
+    margin-left: 20px;
     height: 25px
 }
 
@@ -348,7 +367,7 @@
     cursor: not-allowed
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:700px) {
     .rcw-sender {
         border-radius: 0;
         flex-shrink: 0
@@ -374,7 +393,7 @@
     margin-right: 10px
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:700px) {
     .quick-buttons-container {
         padding-bottom: 15px
     }
@@ -889,7 +908,7 @@
 
 .rcw-conversation-container {
     border-radius: 10px;
-    box-shadow: 0 2px 10px 1px #b5b5b5;
+    box-shadow: 0 2px 10px 1px var(--boxShadowBarColor);
     min-width: 370px;
     max-width: 90vw;
     position: relative
@@ -928,7 +947,7 @@
     height: 100%
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:700px) {
     .rcw-conversation-container {
         display: flex;
         flex-direction: column;
@@ -963,10 +982,10 @@
     animation-name: slide-in;
     animation-fill-mode: forwards;
     align-self: flex-end;
-    background-color: #35cce6;
+    background-color: #0d186b;
     border: 0;
     border-radius: 50%;
-    box-shadow: 0 2px 10px 1px #b5b5b5;
+    box-shadow: 0 2px 10px 1px var(--boxShadowBarColor);
     height: 60px;
     margin-top: 10px;
     cursor: pointer;
@@ -1008,7 +1027,7 @@
     animation-fill-mode: forwards
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:700px) {
     .rcw-launcher {
         bottom: 0;
         margin: 20px;
@@ -1185,10 +1204,10 @@
     width: 100%
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:700px) {
     .rcw-widget-container {
         height: 100%;
-        height: 100vh;
+        /* height: 100vh; */
         margin: 0;
         max-width: none;
         width: 100%

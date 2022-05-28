@@ -1,5 +1,4 @@
-import styles from './Search.module.css'
-import { FcSearch } from 'react-icons/fc'
+import styles from './Search.module.css';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useQuery } from '../hooks/useQuery';
@@ -21,7 +20,7 @@ export function Search() {
 
     const handleSubmit = (event) => {
         event.preventDefault();     // Cancelar el evento por defaul del formulario
-        navigate("/?search=" + searchText);
+        navigate("/react-movie-flix/?search=" + searchText);
     }
     return (
         <form className={styles.searchContainer} onSubmit={handleSubmit}>
@@ -32,11 +31,11 @@ export function Search() {
                     onChange={
                         (e) => setSearchText(e.target.value)
                     }
+                    placeholder = "Search movie..."
                 />
                 <button
                     className={styles.searchButton}
-                    type="submit">
-                    <FcSearch size={20}/>
+                    type="submit">🎥
                 </button>
             </div>
         </form>

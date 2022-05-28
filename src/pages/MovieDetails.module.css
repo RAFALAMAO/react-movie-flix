@@ -1,5 +1,4 @@
 .deatilsContainer {
-    color: rgb(178, 254, 255);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -16,10 +15,34 @@
     border-radius: 50px;
 }
 
-.movieDetails {
-    font-size: 1.5rem;
+.title {
+    color: rgb(255, 0, 106);
 }
 
-.firstP {
+.movieDetails {
+    color: rgb(255, 255, 255);
+    background: rgb(27, 21, 21);
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.title {
     margin-top: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+.description {
+    color: azure;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (max-width: 560px){
+    .description {
+        margin-bottom: 70px;
+    }
 }

@@ -2,11 +2,25 @@
     list-style: none;
     font-size: 1.5rem;
     text-align: center;
+
+    transition: .2s ease-in-out;
+}
+
+.titles{
+    color: rgb(223, 224, 255);
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* Cuando pase el mouse */
+.movieCard:hover .titles{
+    /* opacity: 0.9; */
+    color: rgb(148, 152, 255);
+    transform: scale(1.05);
+}
+
 .movieCard:hover{
-    opacity: 0.5;
+    transform: scale(1.05);
 }
 
 .movieImage{
@@ -17,11 +31,14 @@
 @media (max-width: 560px){
     .movieImage{
         border-radius: 10px;
-        width: 100%;
+        width: 90%;
         height: auto;
     }
     .movieCard{
         list-style: none;
         font-size: 0.5rem;
+    }
+    .titles{
+        font-size: 20px;
     }
 }

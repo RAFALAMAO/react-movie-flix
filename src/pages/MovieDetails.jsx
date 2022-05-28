@@ -24,6 +24,7 @@ export function MovieDetails() {
     .then(data => {
       setMovie(data);
       setIsLoading(false);
+      console.log(data)
     });
   }, [movieId]); // Arreglo para que solo se cargue una vez el efecto
 
@@ -40,11 +41,16 @@ export function MovieDetails() {
     <div className={styles.deatilsContainer}>
       <img className={`${styles.col} ${styles.movieImage}`} src={imageUrl} alt={movie.title}/>
       <div className={`${styles.col} ${styles.movieDetails}`}>
-        <p className={`${styles.firstP}`}><strong>Title:</strong> {movie.title}</p>
-        <p><strong>Description:</strong> {movie.overview}</p>
-        <p><strong>Genres: </strong>
-          {movie.genres.map((genre) => (genre.name)).join(", ")}
-        </p>
+        <h1 className={`${styles.title}`}>{movie.title}</h1>
+        <div className={`${styles.description}`}>
+          <p><strong>Overview</strong><br /><br /> {movie.overview}</p><br />
+          <p><strong>Genres:</strong>
+            &nbsp;{movie.genres.map((genre) => (genre.name)).join(", ")}.
+          </p>
+          <p><strong>⭐</strong>
+            &nbsp;{movie.vote_average}/10
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ export function MovieCard({movie}) {
     const imageUrl = "https://image.tmdb.org/t/p/w300" + movie.poster_path
     return (
       <li className={styles.movieCard}>
-        <Link to={"/movies/" + movie.id}>
+        <Link to={"/react-movie-flix/movies/" + movie.id}>
           <img
             with={230}
             height={345}
@@ -13,7 +13,7 @@ export function MovieCard({movie}) {
             src={imageUrl}
             alt={movie.original_title}
           />
-          <div>{movie.title + " (Idioma: " + movie.original_language + ")"}</div>
+          <h1 className={styles.titles}>{movie.title}</h1>
         </Link>
       </li>
     );

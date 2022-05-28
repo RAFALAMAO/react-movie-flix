@@ -1,6 +1,8 @@
 .spinner {
     display: flex;
     justify-content: center;
+    color: rgb(255, 0, 106);
+    margin-top: 200px;
 }
 
 .spinning {
