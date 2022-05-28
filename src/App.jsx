@@ -17,7 +17,7 @@ import { useEffect } from "react";
 export function App() {
 
   useEffect(() => {
-    addResponseMessage('Welcome 😁🖖! write me the **movie** 🎥 and I will show you relevant information ( max 3 movies ).');
+    addResponseMessage('Welcome 😁🖖!\n\n Write me the **movie** 🎥 and I will show you relevant information ( max 3 movies ).');
   }, []);
 
   return (
